@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cart2" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_arrow" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/itemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="85dp">
+
+        <ImageView
+            android:id="@+id/imageItem"
+            android:layout_width="187dp"
+            android:layout_height="158dp"
+            android:src="@drawable/img1" />
+
+        <LinearLayout
+            android:id="@+id/descriptionLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="This is a description of the computer"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <TextView
+                android:id="@+id/itemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price MAD"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/item1details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CPU"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="241dp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/item2details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="GPU"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="157dp"
+        android:layout_height="20dp"
+        android:text="Enter item details here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/item2details"
+        app:layout_constraintEnd_toEndOf="@+id/item2details"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/item2details"
+        app:layout_constraintTop_toBottomOf="@+id/item1details"
+        app:layout_constraintVertical_bias="0.386"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="161dp"
+        android:layout_height="18dp"
+        android:text="Enter item details here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/item1details"
+        app:layout_constraintEnd_toEndOf="@+id/item1details"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/item1details"
+        app:layout_constraintTop_toTopOf="@+id/item1details"
+        app:layout_constraintVertical_bias="0.369"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/item4"
+        android:layout_width="159dp"
+        android:layout_height="20dp"
+        android:text="Enter item details here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/item4details"
+        app:layout_constraintEnd_toEndOf="@+id/item4details"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/item4details"
+        app:layout_constraintTop_toTopOf="@+id/item4details"
+        app:layout_constraintVertical_bias="0.409"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/item3details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Switch"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <TextView
+        android:id="@+id/item3"
+        android:layout_width="159dp"
+        android:layout_height="19dp"
+        android:text="Enter item details here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toTopOf="@+id/item4details"
+        app:layout_constraintEnd_toEndOf="@+id/item3details"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/item3details"
+        app:layout_constraintTop_toTopOf="@+id/item3details"
+        app:layout_constraintVertical_bias="0.333"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/item4details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aura"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <LinearLayout
+        android:id="@+id/qtInfos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button_add_to_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item4details"
+        app:layout_constraintVertical_bias="0.705">
+
+        <TextView
+            android:id="@+id/label_total"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="90dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="#1A73E9"
+            android:padding="0dp"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="x1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="#1A73E9"
+            android:padding="0dp"
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/text_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="3000 MAD"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add_to_cart"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="ADD TO CART"
+        android:textColor="@color/white"
+        app:backgroundTint="#1A73E9"
+        app:icon="@drawable/panierslogo"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

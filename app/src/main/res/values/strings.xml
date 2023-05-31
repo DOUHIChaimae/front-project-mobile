@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">front-project-mobile</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+    <string name="subtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+</resources>
