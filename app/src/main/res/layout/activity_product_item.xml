@@ -54,7 +54,7 @@
                         android:paddingRight="120dp"
                         android:text="Price: $10.99"
                         android:textColor="@color/black"
-                        android:textSize="17sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <Button
