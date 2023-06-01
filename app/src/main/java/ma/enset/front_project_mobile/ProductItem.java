@@ -45,6 +45,7 @@ public class ProductItem implements Parcelable {
         this.imageResource = imageResource;
     }
 
+
     protected ProductItem(Parcel in) {
         name = in.readString();
         description = in.readString();
