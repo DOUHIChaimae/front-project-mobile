@@ -3,33 +3,25 @@ package ma.enset.front_project_mobile;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.List;
+
 public class ProductItem implements Parcelable {
     private String name;
     private String description;
     private double price;
     private int quantity;
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public void setImageResource(int imageResource) {
-        this.imageResource = imageResource;
-    }
-
     private int imageResource;
+
+    private List<Feature> features;
+
+    public ProductItem(String name, String description, double price, int quantity, int imageResource, List<Feature> features) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.quantity = quantity;
+        this.imageResource = imageResource;
+        this.features = features;
+    }
 
     public ProductItem(String name, String description, double price, int quantity, int imageResource) {
         this.name = name;
@@ -85,6 +77,29 @@ public class ProductItem implements Parcelable {
     public int getImageResource() {
         return imageResource;
     }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public void setImageResource(int imageResource) {
+        this.imageResource = imageResource;
+    }
+
+
 
     @Override
     public int describeContents() {
