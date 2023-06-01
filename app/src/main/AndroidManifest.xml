@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Frontprojectmobile"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".SingInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:exported="false" />
 
+
+    </application>
 </manifest>
