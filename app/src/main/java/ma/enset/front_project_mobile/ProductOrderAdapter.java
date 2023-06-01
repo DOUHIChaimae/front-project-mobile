@@ -12,18 +12,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import java.util.Locale;
 
-public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
+public class ProductOrderAdapter extends RecyclerView.Adapter<ProductOrderAdapter.ProductViewHolder> {
 
     private List<ProductItem> productList;
 
-    public ProductAdapter(List<ProductItem> productList) {
+    public ProductOrderAdapter(List<ProductItem> productList) {
         this.productList = productList;
     }
 
     @NonNull
     @Override
     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_product_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_product_order_item, parent, false);
         return new ProductViewHolder(view);
     }
 

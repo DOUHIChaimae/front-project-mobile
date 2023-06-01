@@ -18,7 +18,7 @@ import java.util.List;
 public class OrderDetailsActivity extends AppCompatActivity {
 
     private RecyclerView productListRecyclerView;
-    private ProductAdapter productAdapter;
+    private ProductOrderAdapter productOrderAdapter;
     private LinearLayout unpaidButtonsLayout;
     private TextView totalValueTextView;
     private TextView subtotalValueTextView;
@@ -62,8 +62,8 @@ public class OrderDetailsActivity extends AppCompatActivity {
         List<ProductItem> productList = getProductListFromIntent();
 
         // Create and set up the product adapter
-        productAdapter = new ProductAdapter(productList);
-        productListRecyclerView.setAdapter(productAdapter);
+        productOrderAdapter = new ProductOrderAdapter(productList);
+        productListRecyclerView.setAdapter(productOrderAdapter);
         productListRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // Calculate and display the total price

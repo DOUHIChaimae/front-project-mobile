@@ -8,11 +8,38 @@ public class ProductItem implements Parcelable {
     private String description;
     private double price;
     private int quantity;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public void setImageResource(int imageResource) {
+        this.imageResource = imageResource;
+    }
+
     private int imageResource;
 
     public ProductItem(String name, String description, double price, int quantity, int imageResource) {
         this.name = name;
         this.description = description;
+        this.price = price;
+        this.quantity = quantity;
+        this.imageResource = imageResource;
+    }
+    public ProductItem(String name, double price, int quantity, int imageResource) {
+        this.name = name;
         this.price = price;
         this.quantity = quantity;
         this.imageResource = imageResource;
