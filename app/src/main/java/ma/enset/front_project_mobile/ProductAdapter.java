@@ -1,6 +1,7 @@
 package ma.enset.front_project_mobile;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             @Override
             public void onClick(View v) {
                 // Ajouter la logique pour ajouter le produit au panier
+                Intent intent = new Intent(v.getContext(), ProductDetailsActivity.class);
+                v.getContext().startActivity(intent);
             }
         });
     }
