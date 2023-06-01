@@ -74,7 +74,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
+    <TextView
         android:id="@+id/item1details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -84,11 +84,9 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="241dp"
+        tools:layout_editor_absoluteY="241dp" />
 
-        />
-
-    <com.google.android.material.textfield.TextInputEditText
+    <TextView
         android:id="@+id/item2details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -142,7 +140,7 @@
         app:layout_constraintVertical_bias="0.409"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <TextView
         android:id="@+id/item3details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -168,7 +166,7 @@
         app:layout_constraintVertical_bias="0.333"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <TextView
         android:id="@+id/item4details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -179,6 +177,7 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="444dp" />
+
 
     <LinearLayout
         android:id="@+id/qtInfos"
