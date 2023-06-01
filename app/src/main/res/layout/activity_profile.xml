@@ -3,18 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
     <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="56dp"
-        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical">
 
         <!-- Back Button -->
         <ImageButton
             android:id="@+id/backButton"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@drawable/ic_back_arrow"
             android:background="@android:color/transparent" />
 
@@ -35,7 +36,7 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
         android:scaleType="centerCrop"
         android:src="@drawable/userlogo" />
 
@@ -46,8 +47,8 @@
         android:text="John Doe"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="8dp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
 
     <TextView
         android:id="@+id/emailtext"
@@ -55,8 +56,9 @@
         android:layout_height="wrap_content"
         android:text="john.doe@example.com"
         android:textSize="16sp"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="16dp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textColor="#666666" />
 
     <TextView
         android:id="@+id/bioText"
@@ -64,46 +66,59 @@
         android:layout_height="wrap_content"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         android:textSize="16sp"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="#333333" />
 
     <Space
         android:layout_width="0dp"
-        android:layout_height="30dp"></Space>
+        android:layout_height="24dp" />
 
-    <Button
-        android:id="@+id/MyOrdersButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#63DF86"
-        android:text="My orders"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/editProfileButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#173965"
-        android:text="Edit Profile"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        <Button
+            android:id="@+id/MyOrdersButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#63DF86"
+            android:text="Orders"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp" />
 
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#173965"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
 
-    <Button
-        android:id="@+id/logoutButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#D32F2F"
-        android:text="Logout"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D32F2F"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="8dp" />
 
-
+    </LinearLayout>
 
 </LinearLayout>

@@ -38,6 +38,9 @@
         <activity
             android:name=".OrderDetailsActivity"
             android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
 
 
     </application>
