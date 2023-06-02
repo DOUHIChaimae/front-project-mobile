@@ -86,7 +86,8 @@ public class OrderDetailsActivity extends AppCompatActivity {
         payNowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Perform pay now action here
+                Intent intent = new Intent(v.getContext(), PaymentActivity.class);
+                v.getContext().startActivity(intent);
             }
         });
     }
