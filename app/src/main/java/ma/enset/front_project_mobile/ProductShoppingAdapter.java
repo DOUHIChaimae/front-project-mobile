@@ -61,6 +61,7 @@ public class ProductShoppingAdapter extends RecyclerView.Adapter<ProductShopping
         return productList.size();
     }
 
+
     public class ProductViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView productImageView;
