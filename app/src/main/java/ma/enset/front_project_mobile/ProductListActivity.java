@@ -50,10 +50,12 @@ public class ProductListActivity extends AppCompatActivity {
     private List<ProductItem> getProductList() {
         List<ProductItem> productList = new ArrayList<>();
         // Add your product items here
-        productList.add(new ProductItem("Notebook 15.6 Laptop", "GeForce MX110 Dedicated Card English Win 10 Laptop", 10.99 , 0, R.drawable.img2));
-        productList.add(new ProductItem("ROG Strix G17 (2022)", "- Republic of Gamers｜ROG Global", 10.99, 0, R.drawable.img3));
-        productList.add(new ProductItem("Gaming Laptops｜ROG", getString(R.string.subtext), 10.99, 0, R.drawable.img2));
-        productList.add(new ProductItem("Gaming Laptops｜ROG", getString(R.string.subtext), 10.99, 0, R.drawable.img3));
+        productList.add(new ProductItem("LG Gram 17"," Despite its large screen, it remains exceptionally light, making it ideal for those who prioritize portability.  " , 10000, 0, R.drawable.img4));
+        productList.add(new ProductItem("Gaming Laptops｜ROG"," It features a high-refresh-rate display, a powerful AMD Ryzen processor. " , 9000, 0, R.drawable.img14));
+        productList.add(new ProductItem("OG Zephyrus G14","known for its robust build quality and exceptional keyboard.", 14000, 0, R.drawable.img13));
+        productList.add(new ProductItem("N1707VNB5620EMEA01 Vostro"," Despite its large screen, it remains exceptionally light, making it ideal for those who prioritize portability.  " , 8900, 0, R.drawable.img1));
+        productList.add(new ProductItem("Notebook 15.6 Laptop", "It offers a stunning 4K display, powerful processors, and a built-in stylus for creative tasks.", 8000 , 0, R.drawable.img2));
+        productList.add(new ProductItem("ROG Strix G17 (2022)", "It offers a vibrant touchscreen display, long battery life, and a comfortable keyboard.", 15000, 0, R.drawable.img3));
         return productList;
     }
 

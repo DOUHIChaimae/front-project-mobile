@@ -42,7 +42,7 @@
             android:id="@+id/imageItem"
             android:layout_width="187dp"
             android:layout_height="158dp"
-            android:src="@drawable/img1" />
+            android:src="@drawable/img13" />
 
         <LinearLayout
             android:id="@+id/descriptionLayout"
@@ -57,14 +57,14 @@
                 android:id="@+id/itemText"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:text="This is a description of the computer"
+                android:text="known for its robust build quality and exceptional keyboard."
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <TextView
                 android:id="@+id/itemPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3000 MAD"
+                android:text="14000 MAD"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -100,7 +100,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Enter item details here"
+                android:text="Intel Core i7-10700K"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
         </LinearLayout>
 
@@ -124,7 +124,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Enter item details here"
+                android:text="NVIDIA GeForce RTX 3080"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
         </LinearLayout>
 
@@ -148,7 +148,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Enter item details here"
+                android:text="Cisco Catalyst 2960X"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
         </LinearLayout>
 
@@ -172,7 +172,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Enter item details here"
+                android:text="ASUS Aura Sync RGB lighting system"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
         </LinearLayout>
     </LinearLayout>
@@ -242,7 +242,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:text="3000 MAD"
+            android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textStyle="bold" />
 

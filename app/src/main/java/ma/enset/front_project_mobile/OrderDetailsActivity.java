@@ -55,7 +55,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
         orderStatusTextView.setText(status);
 
         // Hide the unpaid buttons if the order is PAID or CANCEL
-        if (status.equals("PAID") || status.equals("CANCEL")) {
+        if (status.equals("PAID") || status.equals("CANCELED")) {
             unpaidButtonsLayout.setVisibility(View.GONE);
         }
 

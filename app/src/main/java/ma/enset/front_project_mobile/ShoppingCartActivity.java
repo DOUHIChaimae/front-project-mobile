@@ -56,9 +56,9 @@ public class ShoppingCartActivity extends AppCompatActivity {
     // Method to generate sample product list
     private List<ProductItem> generateProductList() {
         List<ProductItem> productList = new ArrayList<>();
-        productList.add(new ProductItem("Product 1", 3000.00, 1, R.drawable.img1));
-        productList.add(new ProductItem("Product 2", 2500.00, 1, R.drawable.pc));
-        productList.add(new ProductItem("Product 3", 1500.00, 1, R.drawable.pc4));
+        productList.add(new ProductItem("LG Gram 17", 10000.00, 3, R.drawable.img4));
+        productList.add(new ProductItem("Gaming Laptops｜ROG", 9000.00, 2, R.drawable.img14));
+        productList.add(new ProductItem("OG Zephyrus G14", 14000.00, 1, R.drawable.img13));
         return productList;
     }
 }

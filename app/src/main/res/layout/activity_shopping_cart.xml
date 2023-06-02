@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:text="3000.00 MAD"
+            android:text="62000.00 MAD"
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textStyle="bold" />
     </LinearLayout>

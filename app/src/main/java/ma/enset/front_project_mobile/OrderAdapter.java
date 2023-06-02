@@ -42,8 +42,8 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
             holder.statusTextView.setTextColor(Color.GREEN);
         } else if (orderItem.getStatus().equals("UNPAID")) {
             holder.statusTextView.setTextColor(Color.parseColor("#FFA500")); // Orange color
-        } else if (orderItem.getStatus().equals("CANCEL")) {
-            holder.statusTextView.setTextColor(Color.GREEN);
+        } else if (orderItem.getStatus().equals("CANCELED")) {
+            holder.statusTextView.setTextColor(Color.RED);
         }
         holder.detailsButton.setOnClickListener(new View.OnClickListener() {
             @Override
