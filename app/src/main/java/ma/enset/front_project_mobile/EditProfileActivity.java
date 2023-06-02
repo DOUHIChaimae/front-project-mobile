@@ -27,12 +27,23 @@ public class EditProfileActivity extends AppCompatActivity {
         saveButton = findViewById(R.id.saveButton);
         ImageButton backButton = findViewById(R.id.backButton);
 
+        // Retrieve the passed data from the Intent
+        String name = getIntent().getStringExtra("name");
+        String email = getIntent().getStringExtra("email");
+        String bio = getIntent().getStringExtra("bio");
+
+        // Set the data to the respective EditText fields
+        nameEditText.setText(name);
+        emailEditText.setText(email);
+        bioEditText.setText(bio);
+
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 saveProfile();
             }
         });
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +51,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
     private void saveProfile() {
@@ -47,10 +59,14 @@ public class EditProfileActivity extends AppCompatActivity {
         String email = emailEditText.getText().toString();
         String bio = bioEditText.getText().toString();
 
-        // TODO: Save the profile information
+        // Create an intent to pass the updated data back to ProfileActivity
+        Intent intent = new Intent();
+        intent.putExtra("name", name);
+        intent.putExtra("email", email);
+        intent.putExtra("bio", bio);
 
-        // Example: Display a toast message
-        Toast.makeText(this, "Profile saved successfully", Toast.LENGTH_SHORT).show();
+        // Set the result as RESULT_OK and attach the intent
+        setResult(RESULT_OK, intent);
+        finish(); // Finish EditProfileActivity and return to ProfileActivity
     }
 }
-
