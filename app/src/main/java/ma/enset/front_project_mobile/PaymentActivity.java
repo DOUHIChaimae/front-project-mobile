@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -47,6 +48,10 @@ public class PaymentActivity extends AppCompatActivity {
                 } else if (selectedId == R.id.radioButtonCreditCard) {
                     // Show credit card fields
                     creditCardLayout.setVisibility(View.VISIBLE);
+                    // Display payment success message
+                    Toast.makeText(getApplicationContext(), "Verification email sent", Toast.LENGTH_SHORT).show();
+                    Intent productListIntent = new Intent(PaymentActivity.this, ProductListActivity.class);
+                    startActivity(productListIntent);
                 }
             }
         });

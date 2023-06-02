@@ -1,5 +1,4 @@
 package ma.enset.front_project_mobile;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +26,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         addToCartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ShoppingCartActivity.class);
+                Intent intent = new Intent(v.getContext(), ProductListActivity.class);
                 v.getContext().startActivity(intent);
             }
         });
