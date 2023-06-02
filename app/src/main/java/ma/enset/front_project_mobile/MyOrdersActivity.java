@@ -30,7 +30,6 @@ public class MyOrdersActivity extends AppCompatActivity {
             }
         });
 
-        // Prepare sample order items (replace with your actual data retrieval logic)
         orderItems = new ArrayList<>();
         List<ProductItem> productList = new ArrayList<>();
         productList.add(new ProductItem("LG Gram 17","it remains exceptionally light, making it ideal for those who prioritize portability.", 10000.00, 3, R.drawable.img4));
@@ -45,9 +44,6 @@ public class MyOrdersActivity extends AppCompatActivity {
         productList3.add(new ProductItem("N1707VNB5620EMEA01 Vostro", "Despite its large screen, it remains exceptionally light, making it ideal for those who prioritize portability.", 8900, 2, R.drawable.img1));
         orderItems.add(new OrderItem("345", "CANCELED", productList2));
 
-        // Add more order items as needed
-
-        // Set up the RecyclerView
         RecyclerView recyclerView = findViewById(R.id.orderlistrecycleview);
         OrderAdapter orderAdapter = new OrderAdapter(orderItems);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

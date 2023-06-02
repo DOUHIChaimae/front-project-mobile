@@ -24,16 +24,13 @@ public class ShoppingCartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_cart);
 
-        // Initialize product list
         productList = generateProductList();
 
-        // Initialize RecyclerView
         recyclerView = findViewById(R.id.productListRecyclerViewShopping);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         productShoppingAdapter = new ProductShoppingAdapter(productList);
         recyclerView.setAdapter(productShoppingAdapter);
 
-        // Pay Now Button
         payNowButton = findViewById(R.id.payNowButton);
         payNowButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +50,6 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
     }
 
-    // Method to generate sample product list
     private List<ProductItem> generateProductList() {
         List<ProductItem> productList = new ArrayList<>();
         productList.add(new ProductItem("LG Gram 17", 10000.00, 3, R.drawable.img4));

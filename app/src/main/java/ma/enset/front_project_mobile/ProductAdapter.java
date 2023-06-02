@@ -37,7 +37,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         holder.addToCartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Ajouter la logique pour ajouter le produit au panier
                 Intent intent = new Intent(v.getContext(), ProductDetailsActivity.class);
                 v.getContext().startActivity(intent);
             }

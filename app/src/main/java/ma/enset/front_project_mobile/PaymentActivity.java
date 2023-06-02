@@ -25,10 +25,8 @@ public class PaymentActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.radioButtonPayPal) {
-                    // PayPal selected, hide credit card fields
                     creditCardLayout.setVisibility(View.GONE);
                 } else if (checkedId == R.id.radioButtonCreditCard) {
-                    // Credit Card selected, show credit card fields
                     creditCardLayout.setVisibility(View.VISIBLE);
                 }
             }
@@ -38,17 +36,13 @@ public class PaymentActivity extends AppCompatActivity {
         validationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Check which payment option is selected
                 int selectedId = radioGroupPaymentOptions.getCheckedRadioButtonId();
                 if (selectedId == R.id.radioButtonPayPal) {
-                    // Open PayPal website
                     Uri paypalUri = Uri.parse("https://www.paypal.com");
                     Intent paypalIntent = new Intent(Intent.ACTION_VIEW, paypalUri);
                     startActivity(paypalIntent);
                 } else if (selectedId == R.id.radioButtonCreditCard) {
-                    // Show credit card fields
                     creditCardLayout.setVisibility(View.VISIBLE);
-                    // Display payment success message
                     Toast.makeText(getApplicationContext(), "Verification email sent", Toast.LENGTH_SHORT).show();
                     Intent productListIntent = new Intent(PaymentActivity.this, ProductListActivity.class);
                     startActivity(productListIntent);

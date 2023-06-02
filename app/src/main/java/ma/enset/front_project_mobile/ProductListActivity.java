@@ -49,7 +49,6 @@ public class ProductListActivity extends AppCompatActivity {
 
     private List<ProductItem> getProductList() {
         List<ProductItem> productList = new ArrayList<>();
-        // Add your product items here
         productList.add(new ProductItem("LG Gram 17"," Despite its large screen, it remains exceptionally light, making it ideal for those who prioritize portability.  " , 10000, 0, R.drawable.img4));
         productList.add(new ProductItem("Gaming Laptops｜ROG"," It features a high-refresh-rate display, a powerful AMD Ryzen processor. " , 9000, 0, R.drawable.img14));
         productList.add(new ProductItem("OG Zephyrus G14","known for its robust build quality and exceptional keyboard.", 14000, 0, R.drawable.img13));

@@ -24,7 +24,6 @@ public class SingInActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Lorsque le bouton de connexion est cliqué, passer à ProductListActivity
                 Intent intent = new Intent(SingInActivity.this, ProductListActivity.class);
                 startActivity(intent);
             }
@@ -33,7 +32,6 @@ public class SingInActivity extends AppCompatActivity {
         registerTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Lorsque le texte d'inscription est cliqué, passer à SignUpActivity
                 Intent intent = new Intent(SingInActivity.this, SingUpActivity.class);
                 startActivity(intent);
             }

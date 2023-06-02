@@ -29,24 +29,20 @@ public class SingUpActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Afficher une alerte de succès d'opération
                 showAlert("Success", "Registration successful!");
-
-                // Rediriger vers la page de login après 3 secondes
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         Intent intent = new Intent(SingUpActivity.this, SingInActivity.class);
                         startActivity(intent);
                     }
-                }, 3000); // 3000 millisecondes = 3 secondes
+                }, 3000);
             }
         });
 
         loginTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Rediriger vers la page de login
                 Intent intent = new Intent(SingUpActivity.this, SingInActivity.class);
                 startActivity(intent);
             }
@@ -59,14 +55,12 @@ public class SingUpActivity extends AppCompatActivity {
                 .setMessage(message)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // Code exécuté lorsque l'utilisateur clique sur OK
                         dialog.dismiss();
                     }
                 });
         AlertDialog dialog = builder.create();
         dialog.show();
 
-        // Fermer l'alerte après 3 secondes
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -74,6 +68,6 @@ public class SingUpActivity extends AppCompatActivity {
                     dialog.dismiss();
                 }
             }
-        }, 3000); // 3000 millisecondes = 3 secondes
+        }, 3000);
     }
 }

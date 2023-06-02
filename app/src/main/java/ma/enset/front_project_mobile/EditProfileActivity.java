@@ -27,12 +27,10 @@ public class EditProfileActivity extends AppCompatActivity {
         saveButton = findViewById(R.id.saveButton);
         ImageButton backButton = findViewById(R.id.backButton);
 
-        // Retrieve the passed data from the Intent
         String name = getIntent().getStringExtra("name");
         String email = getIntent().getStringExtra("email");
         String bio = getIntent().getStringExtra("bio");
 
-        // Set the data to the respective EditText fields
         nameEditText.setText(name);
         emailEditText.setText(email);
         bioEditText.setText(bio);
@@ -59,14 +57,12 @@ public class EditProfileActivity extends AppCompatActivity {
         String email = emailEditText.getText().toString();
         String bio = bioEditText.getText().toString();
 
-        // Create an intent to pass the updated data back to ProfileActivity
         Intent intent = new Intent();
         intent.putExtra("name", name);
         intent.putExtra("email", email);
         intent.putExtra("bio", bio);
 
-        // Set the result as RESULT_OK and attach the intent
         setResult(RESULT_OK, intent);
-        finish(); // Finish EditProfileActivity and return to ProfileActivity
+        finish();
     }
 }
