@@ -37,7 +37,7 @@
                     android:text="@Notebook 15.6 Laptops GeForce MX110 Dedicated Card English Win 10 Laptop"
                     android:paddingHorizontal="2dp"
                     android:textColor="#9A000000"
-                    android:textSize="17dp"
+                    android:textSize="16dp"
                     android:textAlignment="center" />
 
                 <LinearLayout
@@ -54,7 +54,7 @@
                         android:paddingRight="120dp"
                         android:text="Price: $10.99"
                         android:textColor="@color/black"
-                        android:textSize="15sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <Button
@@ -64,7 +64,7 @@
                         android:layout_margin="8dp"
                         android:text="Add to Cart"
                         android:backgroundTint="#1A73E9"
-                        android:textSize="12sp" />
+                        android:textSize="9sp" />
 
                 </LinearLayout>
 
