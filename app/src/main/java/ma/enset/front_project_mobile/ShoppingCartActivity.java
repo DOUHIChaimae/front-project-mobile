@@ -38,7 +38,8 @@ public class ShoppingCartActivity extends AppCompatActivity {
         payNowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle payment
+                Intent intent = new Intent(v.getContext(), PaymentActivity.class);
+                v.getContext().startActivity(intent);
             }
         });
         ImageButton backButton = findViewById(R.id.backButton);
