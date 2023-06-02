@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -34,13 +34,18 @@
 
     <LinearLayout
         android:id="@+id/itemDescription"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="85dp">
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@id/itemDetailsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
 
         <ImageView
             android:id="@+id/imageItem"
@@ -74,122 +79,123 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/item1details"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/itemDetailsLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="CPU"
-        android:inputType="text"
-        android:padding="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="241dp" />
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@id/qtInfos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <TextView
-        android:id="@+id/item2details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="GPU"
-        android:inputType="text"
-        android:padding="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="305dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/item2"
-        android:layout_width="157dp"
-        android:layout_height="20dp"
-        android:text="Enter item details here"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintBottom_toBottomOf="@+id/item2details"
-        app:layout_constraintEnd_toEndOf="@+id/item2details"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="@+id/item2details"
-        app:layout_constraintTop_toBottomOf="@+id/item1details"
-        app:layout_constraintVertical_bias="0.386"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/item1details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="CPU"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/item1"
-        android:layout_width="161dp"
-        android:layout_height="18dp"
-        android:text="Enter item details here"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintBottom_toBottomOf="@+id/item1details"
-        app:layout_constraintEnd_toEndOf="@+id/item1details"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="@+id/item1details"
-        app:layout_constraintTop_toTopOf="@+id/item1details"
-        app:layout_constraintVertical_bias="0.369"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/item1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter item details here"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/item4"
-        android:layout_width="159dp"
-        android:layout_height="20dp"
-        android:text="Enter item details here"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintBottom_toBottomOf="@+id/item4details"
-        app:layout_constraintEnd_toEndOf="@+id/item4details"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/item4details"
-        app:layout_constraintTop_toTopOf="@+id/item4details"
-        app:layout_constraintVertical_bias="0.409"
-        tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/item3details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Switch"
-        android:inputType="text"
-        android:padding="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="377dp" />
+            <TextView
+                android:id="@+id/item2details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="GPU"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/item3"
-        android:layout_width="159dp"
-        android:layout_height="19dp"
-        android:text="Enter item details here"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintBottom_toTopOf="@+id/item4details"
-        app:layout_constraintEnd_toEndOf="@+id/item3details"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/item3details"
-        app:layout_constraintTop_toTopOf="@+id/item3details"
-        app:layout_constraintVertical_bias="0.333"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/item2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter item details here"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/item4details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Aura"
-        android:inputType="textPassword"
-        android:padding="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="444dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/item3details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Switch"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter item details here"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item4details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Aura"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter item details here"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/qtInfos"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/button_add_to_cart"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/button_add_to_cart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/item4details"
-        app:layout_constraintVertical_bias="0.705">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/label_total"
