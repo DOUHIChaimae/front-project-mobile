@@ -12,15 +12,6 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/cartIcon"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/cart2" />
-
         <ImageButton
             android:id="@+id/backButton"
             android:layout_width="56dp"
