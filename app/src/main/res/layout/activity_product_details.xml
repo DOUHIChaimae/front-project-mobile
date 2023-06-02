@@ -201,12 +201,12 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/button_plus"
+            android:id="@+id/button_minus"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:backgroundTint="#1A73E9"
             android:padding="0dp"
-            android:text="+"
+            android:text="-"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -222,12 +222,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button_minus"
+            android:id="@+id/button_plus"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:backgroundTint="#1A73E9"
             android:padding="0dp"
-            android:text="-"
+            android:text="+"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:textStyle="bold" />
