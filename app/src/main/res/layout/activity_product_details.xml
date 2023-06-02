@@ -64,7 +64,7 @@
                 android:id="@+id/itemPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Price MAD"
+                android:text="3000 MAD"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textStyle="bold" />
         </LinearLayout>

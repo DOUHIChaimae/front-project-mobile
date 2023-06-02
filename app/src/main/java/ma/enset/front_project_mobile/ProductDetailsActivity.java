@@ -69,5 +69,10 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
     private void updateQuantityTextView() {
         quantityTextView.setText("x" + quantity);
+        // Mettre à jour le prix en fonction de la quantité
+        TextView priceTextView = findViewById(R.id.text_total_price);
+        int pricePerItem = 3000; // Prix par article (vous pouvez le remplacer par votre propre logique)
+        int totalPrice = quantity * pricePerItem;
+        priceTextView.setText(totalPrice + " MAD");
     }
 }
